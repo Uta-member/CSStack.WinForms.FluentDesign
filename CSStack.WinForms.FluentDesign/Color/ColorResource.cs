@@ -134,7 +134,7 @@
         /// <summary>
         /// Control Alt / Transparent
         /// </summary>
-        public required Color ControlAltFillColorTransparentBrush { get; init; } = Color.FromArgb(243, 243, 243);
+        public required Color ControlAltFillColorTransparentBrush { get; init; } = Color.Transparent;
 
         /// <summary>
         /// Control / Border: Rest
@@ -174,7 +174,7 @@
         /// <summary>
         /// Control / Transparent: Rest
         /// </summary>
-        public required Color ControlFillColorTransparentBrush { get; init; } = Color.FromArgb(243, 243, 243);
+        public required Color ControlFillColorTransparentBrush { get; init; } = Color.Transparent;
 
         /// <summary>
         /// Control On Image Fill Default: Rest
@@ -313,7 +313,7 @@
         {
             get;
             init;
-        } = Color.FromArgb(243, 243, 243);
+        } = Color.Transparent;
 
         /// <summary>
         /// Mica Background / Base Alt: Default tab band background color.
@@ -383,7 +383,7 @@
         /// <summary>
         /// Subtle / Transparent: Rest
         /// </summary>
-        public required Color SubtleFillColorTransparentBrush { get; init; } = Color.FromArgb(243, 243, 243);
+        public required Color SubtleFillColorTransparentBrush { get; init; } = Color.Transparent;
 
         /// <summary>
         /// Surface Stroke / Default: Window and dialog borders, theme inverse
