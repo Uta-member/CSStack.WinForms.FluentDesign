@@ -1,6 +1,6 @@
-﻿namespace CSStack.WinForms.FluentDesign.Provider
+﻿namespace CSStack.WinForms.FluentDesign.Components
 {
-    partial class FluentFormBase
+    partial class FluentButton
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // FluentButton
+            // 
+            UseVisualStyleBackColor = false;
+            ResumeLayout(false);
         }
 
         #endregion

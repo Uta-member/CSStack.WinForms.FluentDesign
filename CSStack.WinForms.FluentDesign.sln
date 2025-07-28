@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSStack.WinForms.FluentDesign", "CSStack.WinForms.FluentDesign\CSStack.WinForms.FluentDesign.csproj", "{BE9C5A15-CABB-4E37-B07A-E9C62CFE589D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSStack.WinForms.FluentDesign.Sample", "CSStack.WinForms.FluentDesign.Sample\CSStack.WinForms.FluentDesign.Sample.csproj", "{88A993DA-6906-46E3-9FEA-4D4DB39790DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE9C5A15-CABB-4E37-B07A-E9C62CFE589D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE9C5A15-CABB-4E37-B07A-E9C62CFE589D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE9C5A15-CABB-4E37-B07A-E9C62CFE589D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A993DA-6906-46E3-9FEA-4D4DB39790DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A993DA-6906-46E3-9FEA-4D4DB39790DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A993DA-6906-46E3-9FEA-4D4DB39790DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A993DA-6906-46E3-9FEA-4D4DB39790DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

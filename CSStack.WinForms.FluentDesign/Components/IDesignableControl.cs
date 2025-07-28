@@ -1,6 +1,6 @@
 ﻿namespace CSStack.WinForms.FluentDesign
 {
-    public interface IFluentComponent
+    public interface IDesignableControl
     {
         void ApplyDesign(ThemeResource themeResource);
     }

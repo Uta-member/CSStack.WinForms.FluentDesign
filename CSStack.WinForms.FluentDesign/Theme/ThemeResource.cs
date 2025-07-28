@@ -2,8 +2,8 @@
 {
     public sealed record ThemeResource
     {
-        public required ColorResource Color { get; init; }
+        public ColorResource Color { get; set; } = new ColorResource();
 
-        public required TypographyResource Typography { get; init; }
+        public TypographyResource Typography { get; set; } = new TypographyResource();
     }
 }
