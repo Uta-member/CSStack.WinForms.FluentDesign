@@ -11,6 +11,7 @@ namespace CSStack.WinForms.FluentDesign.Components
         private Color _accentBackColor;
         private Color _accentBorderColor;
         private Color _accentDisabledBackColor;
+        private Color _accentDisabledBorderColor;
         private Color _accentDisabledForeColor;
         private Color _accentElevationColor;
         private Color _accentForeColor;
@@ -127,10 +128,10 @@ namespace CSStack.WinForms.FluentDesign.Components
             if(ButtonType == FluentButtonType.Accent)
             {
                 elevationColor = AccentElevationColor;
-                borderColor = AccentBorderColor;
 
                 if(Enabled)
                 {
+                    borderColor = AccentBorderColor;
                     if(_isPressed)
                     {
                         backColor = AccentPressedBackColor;
@@ -149,6 +150,7 @@ namespace CSStack.WinForms.FluentDesign.Components
                 }
                 else
                 {
+                    borderColor = AccentDisabledBorderColor;
                     backColor = AccentDisabledBackColor;
                     foreColor = AccentDisabledForeColor;
                 }
@@ -188,15 +190,12 @@ namespace CSStack.WinForms.FluentDesign.Components
 
             Rectangle buttonRectangle = ClientRectangle;
 
-            if(hasElevation)
+            var elevationRect = buttonRectangle;
+            using(var path = CreateRoundedRectanglePath(elevationRect, BORDER_RADIUS))
             {
-                var elevationRect = buttonRectangle;
-                using(var path = CreateRoundedRectanglePath(elevationRect, BORDER_RADIUS))
+                using(var brush = new SolidBrush(elevationColor))
                 {
-                    using(var brush = new SolidBrush(elevationColor))
-                    {
-                        g.FillPath(brush, path);
-                    }
+                    g.FillPath(brush, path);
                 }
             }
 
@@ -262,6 +261,7 @@ namespace CSStack.WinForms.FluentDesign.Components
             AccentPressedForeColor = themeResource.Color.TextOnAccentFillColorSecondaryBrush;
             AccentDisabledForeColor = themeResource.Color.TextOnAccentFillColorDisabledBrush;
             AccentBorderColor = themeResource.Color.ControlStrokeColorOnAccentDefaultBrush;
+            AccentDisabledBorderColor = themeResource.Color.ControlStrokeColorOnAccentDisabledBrush;
             AccentElevationColor = themeResource.Color.ControlStrokeColorOnAccentSecondaryBrush;
 
             // Font
@@ -305,6 +305,19 @@ namespace CSStack.WinForms.FluentDesign.Components
             set
             {
                 _accentDisabledBackColor = value;
+                Invalidate();
+            }
+        }
+
+        public Color AccentDisabledBorderColor
+        {
+            get
+            {
+                return _accentDisabledBorderColor;
+            }
+            set
+            {
+                _accentDisabledBorderColor = value;
                 Invalidate();
             }
         }

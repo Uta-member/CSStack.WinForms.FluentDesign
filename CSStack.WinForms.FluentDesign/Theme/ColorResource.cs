@@ -144,7 +144,7 @@
         /// <summary>
         /// Control / Default: Rest
         /// </summary>
-        public  Color ControlFillColorDefaultBrush { get; set; } = Color.FromArgb(251, 251, 251);
+        public  Color ControlFillColorDefaultBrush { get; set; } = Color.FromArgb(255, 255, 255);
 
         /// <summary>
         /// Control / Disabled: Disabled
@@ -219,7 +219,7 @@
         /// <summary>
         /// Control Stroke / On Accent Default: Used in Control Elevation Brushes. Pressed or Disabled
         /// </summary>
-        public  Color ControlStrokeColorOnAccentDefaultBrush { get; set; } = Color.FromArgb(244, 244, 244);
+        public  Color ControlStrokeColorOnAccentDefaultBrush { get; set; } = Color.FromArgb(5, 95, 170);
 
         /// <summary>
         /// Control Stroke / On Accent Disabled: Disabled
@@ -525,7 +525,7 @@
         /// <summary>
         /// Text / Primary: Rest or Hover
         /// </summary>
-        public  Color TextFillColorPrimaryBrush { get; set; } = Color.FromArgb(26, 26, 26);
+        public  Color TextFillColorPrimaryBrush { get; set; } = Color.FromArgb(27, 27, 27);
 
         /// <summary>
         /// Text / Secondary: Rest or Hover
